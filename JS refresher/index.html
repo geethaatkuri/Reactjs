@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Refresher</title>
+    <script>
+        "use strict";
+        // let a = 25;
+        // let a = "this is JS Refresher"
+        let a = 2445;
+        a = 45 + 8;
+        console.log(a);
+
+        function Hello(){
+            console.log("Hello World");
+        }
+        let objA = {
+            p: 9,
+            g: 25,
+            func: function myfunc(number) {
+                console.log("The number is" + number);
+            }
+        }
+
+        document.addEventListener("click", function click(){
+            console.log("Clicked");
+            // alert("The heading is clicked!");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        });
+
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        // }
+        let arr = [25, 9, 4, 10];
+        console.log(this);
+        // function myfunc(number) {
+        //         console.log("The number is" + this);
+        //     }
+        // myfunc();
+
+        // let myfunc = (number) => {
+        //         console.log("The number is" + this);
+        //     }
+        // myfunc();
+
+
+        let mobj = {
+            a : this,
+            myfunc : function (number) {
+                // console.log("The number is" + this);
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+            console.log("Hello, How are you?");
+        }, 3000);
+        console.log("Printing after 3 secs");
+
+
+
+    </script>
+</head>
+<body>
+    <h1>
+        This is all about JS Refresher    
+    </h1>
+    
+    <!-- Datatypes -> numbers, objects, booleans(True or False), Bigint, string, undefined, Null -->
+</body>
+</html>
