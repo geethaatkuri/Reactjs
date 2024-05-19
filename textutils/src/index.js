@@ -3,6 +3,7 @@ import React from "react";
 // var ReactDOM = require("react-dom");
 import ReactDOM from "react-dom";
 //import "./index.css"; //Connecting External CSS to Reactjs file.
+import Application from "./Application";
 
 //In react v16 or above it is possible for render() to return an array of elements
 // So instead of <div> tag we can also use [], 
@@ -20,11 +21,11 @@ import ReactDOM from "react-dom";
 //6. External CSS Styling & Importing CSS files in Reactjs And also 
 //class vs className -> In React there is a reserved keyword named 'class' so instead we should use 'className'
 //7. Internal CSS & Inline CSS styling in Reactjs 
+//8. React Components -> In react everything is a component
 
+ReactDOM.render(<Application />, document.getElementById("root"));
 
-
-
-
+//9. ES6 Modules Import and Export in Reactjs 
 
 
 
@@ -51,50 +52,52 @@ import ReactDOM from "react-dom";
 // document.getElementById("root"));
 
 
-const flName = "Geetha Atkuri";
-const age = 23;
-let country = 'India';
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/300";
-const img3 = "https://picsum.photos/300/300";
-const links = "https://picsum.photos/";
-const heading = {
-    color: "#fa9191", 
-    textTransform: "capitalize", 
-    textAlign: "center",
-    fontWeight: "bold",
-    textShadow: "0px 2px 4px #ffe9c5",
-    margin: "60px 0px",
+// const flName = "Geetha Atkuri";
+// const age = 23;
+// let country = 'India';
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/300";
+// const img3 = "https://picsum.photos/300/300";
+// const links = "https://picsum.photos/";
+// const heading = {
+//     color: "#fa9191", 
+//     textTransform: "capitalize", 
+//     textAlign: "center",
+//     fontWeight: "bold",
+//     textShadow: "0px 2px 4px #ffe9c5",
+//     margin: "60px 0px",
 
-};
+// };
 
-ReactDOM.render(
-<>
-<h1>JSX in React</h1>
-<p>My name is {`${flName}`} and my age is {`${age}`}</p>
-<p>The result of the expression is {2+5}</p>
-<p>Generating random number of {Math.random()}</p>
-</>,
-document.getElementById("root")
-);
+// ReactDOM.render(
+// <>
+// <h1>JSX in React</h1>
+// <p>My name is {`${flName}`} and my age is {`${age}`}</p>
+// <p>The result of the expression is {2+5}</p>
+// <p>Generating random number of {Math.random()}</p>
+// </>,
+// document.getElementById("root")
+// );
+
 //Inside the pair of curly braces we cannot use if,if-else,.... statements 
 
-ReactDOM.render(
-<>
-    {/* Inline styling by using style attribute inside element <h1 className="heading" style={{ color: "green", textTransform: "capitalize", textAlign: "center"}}>I am from {country}</h1> */}
 
-    {/* or the other way is creating object for an element and adding that object inside {} like below */}
-    <h1 className="heading" style={heading}>I am from {country}</h1>
-    <div className="img_div" style={{display: "flex", justifyContent: "center"}}>
-    <img src= {img1} alt="Random Images" style={{width: "300px", height: "350px"}} />
-    <img src= {img2} alt="Random Images" style={{width: "300px", height: "350px"}}/>
-    <a href= {links} target="_blank">
-    <img src= {img3} alt="Random Images" style={{width: "300px", height: "350px"}}/>
-    </a>
-    </div>
-</>, 
-document.getElementById("root")
-);
+// ReactDOM.render(
+// <>
+//     {/* Inline styling by using style attribute inside element <h1 className="heading" style={{ color: "green", textTransform: "capitalize", textAlign: "center"}}>I am from {country}</h1> */}
+
+//     {/* or the other way is creating object for an element and adding that object inside {} like below */}
+//     <h1 className="heading" style={heading}>I am from {country}</h1>
+//     <div className="img_div" style={{display: "flex", justifyContent: "center"}}>
+//     <img src= {img1} alt="Random Images" style={{width: "300px", height: "350px"}} />
+//     <img src= {img2} alt="Random Images" style={{width: "300px", height: "350px"}}/>
+//     <a href= {links} target="_blank">
+//     <img src= {img3} alt="Random Images" style={{width: "300px", height: "350px"}}/>
+//     </a>
+//     </div>
+// </>, 
+// document.getElementById("root")
+// );
 
 
 
