@@ -26,7 +26,7 @@ import Application from "./Application";
 ReactDOM.render(<Application />, document.getElementById("root"));
 
 //9. ES6 Modules Import and Export in Reactjs 
-
+//10. React props -> Stands for Properties. React Props are like funcions arguments in JavaScript and attributes in HTML
 
 
 
