@@ -1,11 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+import Simplebutton from "./Simplebutton";
+import "./simplebutton.css";
 // import "./index.css";
 // import Application from './Application';
 // import Calculateapp from './Calculateapp';
-import Card from "./Cards";
-import "./indexseries.css";
-import Sdata from "./Seriesdata";
+// import Card from "./Cards";
+// import "./indexseries.css";
+// import Sdata from "./Seriesdata";
+// import Slotapp from "./Slotapp";
+// import "./slotcss.css";
+
+
+
+
+
 // console.log(Sdata);
 // Practice Problem 1 -> Series list in an ordered list
 
@@ -91,22 +101,22 @@ import Sdata from "./Seriesdata";
 // }
 
 
-ReactDOM.render(
-  <>
-    <h1 className="heading_style">Best Netflix Series To Binge Watch </h1>
-    {/* Using map function (without repeating the calling the card components for n-times) */}
-    {/* {Sdata.map(ncard)}    */}
-    {/* Using arrow function */}
-    {Sdata.map((val, index)=>{
-        return (
-        <Card
-      imgsrc={val.imgsrc}
-      title={val.title}
-      sname={val.sname}
-      link={val.link}
-    />
-        )
-    })}
+// ReactDOM.render(
+  // <>
+  //   <h1 className="heading_style">Best Netflix Series To Binge Watch </h1>
+    // {/* Using map function (without repeating the calling the card components for n-times) */}
+    // {/* {Sdata.map(ncard)}    */}
+    // {/* Using arrow function */}
+    // {Sdata.map((val, index)=>{
+    //     return (
+    //     <Card
+    //   imgsrc={val.imgsrc}
+    //   title={val.title}
+    //   sname={val.sname}
+    //   link={val.link}
+    // />
+    //     )
+    // })}
     {/* <Card
       imgsrc={Sdata[1].imgsrc}
       title={Sdata[1].title}
@@ -137,6 +147,22 @@ ReactDOM.render(
       sname={Sdata[5].sname}
       link={Sdata[5].link}
     /> */}
-  </>,
-  document.getElementById("root")
-);
+  // </>,
+  // document.getElementById("root")
+// );
+
+
+// Practice Problem - 7 -> Slot Machine Game in Reactjs using if-else stmts also
+// ReactDOM.render(
+//   <>
+//   <Slotapp />
+//   </>, document.getElementById("root")
+// )
+
+
+// Practice Problem - 8 -> 
+ReactDOM.render(
+  <>
+  <Simplebutton />
+  </>, document.getElementById("root")
+)

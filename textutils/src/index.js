@@ -3,7 +3,7 @@ import React from "react";
 // var ReactDOM = require("react-dom");
 import ReactDOM from "react-dom";
 //import "./index.css"; //Connecting External CSS to Reactjs file.
-import Application from "./Application";
+// import Application from "./Application";
 
 //In react v16 or above it is possible for render() to return an array of elements
 // So instead of <div> tag we can also use [], 
@@ -23,10 +23,19 @@ import Application from "./Application";
 //7. Internal CSS & Inline CSS styling in Reactjs 
 //8. React Components -> In react everything is a component
 
-ReactDOM.render(<Application />, document.getElementById("root"));
+// ReactDOM.render(<Application />, document.getElementById("root"));
 
 //9. ES6 Modules Import and Export in Reactjs 
 //10. React props -> Stands for Properties. React Props are like funcions arguments in JavaScript and attributes in HTML
+//11. if-else stmts in Reactjs
+
+//12. React Hooks -> Hooks are the new feature introducedin react in react 16.8 version
+// It allows you to use state and other React features without writing a class. Hooks are functions which "hook into" React state and lifecycle featues from function components. 
+// It does not work inside classes.
+// Hooks should always be used at the top level of the react functions.
+// Requirements to use hooks in reactjs -> Node version 6 or above. NPM version 5.2 or above
+
+
 
 
 
