@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import Simplebutton from "./Simplebutton";
-import "./simplebutton.css";
+import Forms from "./Forms";
+import "./Forms.css";
+// import Hooksproject from "./Hooksproject";
+// import Simplebutton from "./Simplebutton";
+// import "./simplebutton.css";
+// import Digitalclock from "./Digitalclock";
+// import Handlingevents from "./Handlingevents";
+// import "./Handlingevents.css";
 // import "./index.css";
 // import Application from './Application';
 // import Calculateapp from './Calculateapp';
@@ -11,6 +16,8 @@ import "./simplebutton.css";
 // import Sdata from "./Seriesdata";
 // import Slotapp from "./Slotapp";
 // import "./slotcss.css";
+
+
 
 
 
@@ -160,9 +167,41 @@ import "./simplebutton.css";
 // )
 
 
-// Practice Problem - 8 -> 
+// Practice Problem - 8 -> Simple click button
+// ReactDOM.render(
+//   <>
+//   <Simplebutton />
+//   </>, document.getElementById("root")
+// )
+
+
+// Practice Problem - 9 -> Fetching the current time, everytime when clicking on the button and refreshing the page[Using HOOKS Concept in Reactjs]
+// ReactDOM.render(
+//   <>
+//   <Hooksproject />
+//   </>, document.getElementById("root")
+// )
+
+
+//Practice Problem - 10 -> Creating Digital Clock Using Hooks in Reactjs
+// ReactDOM.render(
+//   <>
+//   <Digitalclock />
+//   </>, document.getElementById("root")
+// )
+
+
+//Practice Problem - 11 -> Responsive Interaction with changing background color and content[Using Handling Events]
+// ReactDOM.render(
+//   <>
+//     <Handlingevents />
+//   </>, document.getElementById("root")
+// )
+
+
+//Practice Problems - 12 -> Forms in Reactjs
 ReactDOM.render(
   <>
-  <Simplebutton />
+    <Forms />
   </>, document.getElementById("root")
 )

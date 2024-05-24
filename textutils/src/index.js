@@ -35,6 +35,14 @@ import ReactDOM from "react-dom";
 // Hooks should always be used at the top level of the react functions.
 // Requirements to use hooks in reactjs -> Node version 6 or above. NPM version 5.2 or above
 
+//13. Handling Events in Reactjs -> Event handlers are your own functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs, and so on.   
+// For further reference on responding to events -> https://react.dev/learn/responding-to-events 
+
+//14. Forms in Reactjs -> Just like in HTML, React uses forms to allow users to interact with the web page.
+//In react we have two types of components controlled and uncontrolled.
+// For further reference on Forms in Reactjs -> https://www.w3schools.com/react/react_forms.asp
+
+
 
 
 
