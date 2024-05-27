@@ -9,6 +9,7 @@ const Forms = () => {
     lName: "",
     email: "",
     phone: "",
+    msg: "", 
   });
 
   // const [lastName, setlastName] = useState('');
@@ -29,37 +30,43 @@ const Forms = () => {
     const { value, name } = event.target;
 
     setfullName((preValue) => {
-      // console.log(preValue);
-      if (name === "fName") {
-        return {
-          fName: value,
-          lName: preValue.lName,
-        };
-      } else if (name === "lName") {
-        return {
-          fName: preValue.fName,
-          lName: value,
-          email: preValue.email,
-          phone: preValue.phone,
+      console.log(preValue);
+
+      return{
+        ...preValue,
+        [name]: value,
+      }
+
+      // if (name === "fName") {
+      //   return {
+      //     fName: value,
+      //     lName: preValue.lName,
+      //   };
+      // } else if (name === "lName") {
+      //   return {
+      //     fName: preValue.fName,
+      //     lName: value,
+      //     email: preValue.email,
+      //     phone: preValue.phone,
           
-        };
-      } else if (name === "email") {
-        return {
-          fName: preValue.fName,
-          lName: preValue.lName,
-          email: value,
-          phone: preValue.phone,
+      //   };
+      // } else if (name === "email") {
+      //   return {
+      //     fName: preValue.fName,
+      //     lName: preValue.lName,
+      //     email: value,
+      //     phone: preValue.phone,
           
-        };
-      } else if (name === "phone") {
-        return {
-          fName: preValue.fName,
-          lName: preValue.lName,
-          email: preValue.email,
-          phone: value,
+      //   };
+      // } else if (name === "phone") {
+      //   return {
+      //     fName: preValue.fName,
+      //     lName: preValue.lName,
+      //     email: preValue.email,
+      //     phone: value,
           
-        };
-      } 
+      //   };
+      // } 
     });
   };
 
@@ -85,6 +92,7 @@ const Forms = () => {
             </h1>
             <p>{fullName.email}</p>
             <p>{fullName.phone}</p>
+            <p>{fullName.msg}</p>
 
             <input
               type="text"
@@ -114,6 +122,13 @@ const Forms = () => {
               name="phone"
               onChange={inputEvent}
               value={fullName.phone}
+            />
+            <input 
+              type="text"
+              placeholder="Write you message here...."
+              name="msg"
+              onChange={inputEvent}
+              value={fullName.msg}
             />
             <br />
             <button>Submit</button>
