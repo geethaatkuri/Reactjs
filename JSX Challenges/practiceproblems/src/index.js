@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Forms from "./Forms";
-import "./Forms.css";
+
 // import Hooksproject from "./Hooksproject";
 // import Simplebutton from "./Simplebutton";
 // import "./simplebutton.css";
@@ -199,9 +198,9 @@ import "./Forms.css";
 // )
 
 
-//Practice Problems - 12 -> Forms in Reactjs
+//Practice Problems - 12 -> Login Form in Reactjs
 ReactDOM.render(
   <>
-    <Forms />
+
   </>, document.getElementById("root")
 )

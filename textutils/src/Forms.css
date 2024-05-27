@@ -22,13 +22,14 @@ h1 {
 }
 
 input{
-    width: 50%;
+    width: 11 0%;
     padding: 10px 20px;
     border: none;
     outline: none;
     margin: 20px 0;
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 button {
