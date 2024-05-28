@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Statevariable from "./Statevariable";
+import "./Statevariable.css";
 
 // import Hooksproject from "./Hooksproject";
 // import Simplebutton from "./Simplebutton";
@@ -15,12 +17,6 @@ import ReactDOM from "react-dom";
 // import Sdata from "./Seriesdata";
 // import Slotapp from "./Slotapp";
 // import "./slotcss.css";
-
-
-
-
-
-
 
 // console.log(Sdata);
 // Practice Problem 1 -> Series list in an ordered list
@@ -106,24 +102,24 @@ import ReactDOM from "react-dom";
 //     );
 // }
 
-
 // ReactDOM.render(
-  // <>
-  //   <h1 className="heading_style">Best Netflix Series To Binge Watch </h1>
-    // {/* Using map function (without repeating the calling the card components for n-times) */}
-    // {/* {Sdata.map(ncard)}    */}
-    // {/* Using arrow function */}
-    // {Sdata.map((val, index)=>{
-    //     return (
-    //     <Card
-    //   imgsrc={val.imgsrc}
-    //   title={val.title}
-    //   sname={val.sname}
-    //   link={val.link}
-    // />
-    //     )
-    // })}
-    {/* <Card
+// <>
+//   <h1 className="heading_style">Best Netflix Series To Binge Watch </h1>
+// {/* Using map function (without repeating the calling the card components for n-times) */}
+// {/* {Sdata.map(ncard)}    */}
+// {/* Using arrow function */}
+// {Sdata.map((val, index)=>{
+//     return (
+//     <Card
+//   imgsrc={val.imgsrc}
+//   title={val.title}
+//   sname={val.sname}
+//   link={val.link}
+// />
+//     )
+// })}
+{
+  /* <Card
       imgsrc={Sdata[1].imgsrc}
       title={Sdata[1].title}
       sname={Sdata[1].sname}
@@ -152,11 +148,11 @@ import ReactDOM from "react-dom";
       title={Sdata[5].title}
       sname={Sdata[5].sname}
       link={Sdata[5].link}
-    /> */}
-  // </>,
-  // document.getElementById("root")
+    /> */
+}
+// </>,
+// document.getElementById("root")
 // );
-
 
 // Practice Problem - 7 -> Slot Machine Game in Reactjs using if-else stmts also
 // ReactDOM.render(
@@ -165,14 +161,12 @@ import ReactDOM from "react-dom";
 //   </>, document.getElementById("root")
 // )
 
-
 // Practice Problem - 8 -> Simple click button
 // ReactDOM.render(
 //   <>
 //   <Simplebutton />
 //   </>, document.getElementById("root")
 // )
-
 
 // Practice Problem - 9 -> Fetching the current time, everytime when clicking on the button and refreshing the page[Using HOOKS Concept in Reactjs]
 // ReactDOM.render(
@@ -181,14 +175,12 @@ import ReactDOM from "react-dom";
 //   </>, document.getElementById("root")
 // )
 
-
 //Practice Problem - 10 -> Creating Digital Clock Using Hooks in Reactjs
 // ReactDOM.render(
 //   <>
 //   <Digitalclock />
 //   </>, document.getElementById("root")
 // )
-
 
 //Practice Problem - 11 -> Responsive Interaction with changing background color and content[Using Handling Events]
 // ReactDOM.render(
@@ -197,10 +189,10 @@ import ReactDOM from "react-dom";
 //   </>, document.getElementById("root")
 // )
 
-
-//Practice Problems - 12 -> Login Form in Reactjs
+//Practice Problems - 12 -> Incrementing and decrementing the state variable on button clicked in Reactjs
 ReactDOM.render(
   <>
-
-  </>, document.getElementById("root")
-)
+    <Statevariable />
+  </>,
+  document.getElementById("root")
+);
