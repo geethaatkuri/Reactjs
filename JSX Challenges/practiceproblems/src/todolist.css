@@ -15,7 +15,7 @@ h1{
     margin-bottom: 10px;
     width: 100%;
     outline: none;
-    /* box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 input{
@@ -56,16 +56,16 @@ input{
 
 button{
     min-height: 40px;
-    /* width: 40px; */
+    width: 40px;
     border-radius: 5%;
-    /* border-color: #30336b; */
-    /* background-color: #30336b; */
-    color: black;
-    font-size: 20px;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: white;
+    font-size: 40px;
     border: none;
     outline: none;
     padding: 0 15px;
-    margin-top: 30px;
+    margin-left: 30px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
@@ -86,4 +86,23 @@ button:hover{
 
 .btn_red:hover{
     color: #ff4757;
+}
+
+ol{
+    margin-top: 30px;
+    /* margin-right: 50px; */
+}
+
+ol li{
+padding-left: 0px;
+/* padding: 3px 0; */
+text-align: left;
+font-size: 20px;
+font-weight: 500;
+min-height: 40px;
+display: flex;
+align-items: center;
+color: #8566aa;
+text-transform: capitalize;
+/* border-bottom: 1px solid grey; */
 }

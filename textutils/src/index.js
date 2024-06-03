@@ -4,8 +4,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 //import "./index.css"; //Connecting External CSS to Reactjs file.
 // import Application from "./Application";
-import Forms from "./Forms";
-import "./Forms.css";
+// import Forms from "./Forms";
+// import "./Forms.css";
+import Npmdigitalclock from "./Npmdigitalclock";
 
 //In react v16 or above it is possible for render() to return an array of elements
 // So instead of <div> tag we can also use [], 
@@ -44,11 +45,11 @@ import "./Forms.css";
 //In react we have two types of components controlled and uncontrolled.
 // For further reference on Forms in Reactjs -> https://www.w3schools.com/react/react_forms.asp
 
-ReactDOM.render(
-    <>
-      <Forms />
-    </>, document.getElementById("root")
-  )
+// ReactDOM.render(
+//     <>
+//       <Forms />
+//     </>, document.getElementById("root")
+//   )
 
 //15. Spread operator(...) in Reactjs -> The three dots.
 //The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. 
@@ -81,7 +82,29 @@ ReactDOM.render(
 
 // NOTE: Notice the properties that did not match were combined, but the property that did match, color, was overwritten by the last object that was passed, updateMyVehicle. The resulting color is now yellow.
 
-//16. 
+//16. NPM -> Node Package Manager
+// i) NPM is the world's largest software registry.
+// ii) This registry contains over 800,000 code packages.
+// iii) Open-source developers use npm to share software. 
+
+//Installing npm :
+// i) npm is installed using Node.js
+
+//Software Package Manager
+// i) All the npm packages are defined in files called "package.json" -> example : npm init
+// ii) The content of package.json must be written in JSON.
+// iii) Atleast two fields must be present in the definition file: name and version. 
+
+// Coomand Line Client(CLI)
+// i) npm includes a CLI that can be used to download and install software.
+// ii) npm can manage dependencies.
+
+ReactDOM.render(
+  <>
+    <Npmdigitalclock />
+  </>,
+  document.getElementById("root")
+);
 
 
 
